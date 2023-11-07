@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Search Results</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>List Search Results</h1>
+    <% if (lists.length === 0) { %>
+      <p>No lists found for the entered number.</p>
+    <% } else { %>
+      <ul>
+        <% lists.forEach(function(list) { %>
+          <li><%= list.name %></li>
+        <% }); %>
+      </ul>
+    <% } %>
+  </div>
+</body>
+</html>

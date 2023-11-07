@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Others
+/build-*-Desktop_Qt_6_5_1_MinGW_64_bit-*
